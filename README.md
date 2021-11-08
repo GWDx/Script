@@ -8,5 +8,5 @@
 
 ### 参考
 
-[skywind3000/vim zshrc.zsh](skywind3000/vim zshrc.zsh)
+[skywind3000/vim zshrc.zsh](https://github.com/skywind3000/vim/blob/master/etc/zshrc.zsh)
 

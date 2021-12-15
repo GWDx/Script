@@ -1,7 +1,6 @@
 # 插件
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source ~/文档/Code/Script/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-# source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 
 
@@ -66,3 +65,7 @@ setopt HIST_SAVE_NO_DUPS         # Don't write duplicate entries in the history 
 setopt HIST_REDUCE_BLANKS        # Remove superfluous blanks before recording entry.
 setopt HIST_VERIFY               # Don't execute immediately upon history expansion.
 setopt HIST_BEEP                 # Beep when accessing nonexistent history.
+
+
+alias ll="ls -al"
+alias pythondev=~/.conda/envs/dev1/bin/python

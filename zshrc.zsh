@@ -1,7 +1,9 @@
+[[ "$-" != *i* ]] && return
+
 # 插件
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
+source ~/文档/Code/Script/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 
 # 外观
@@ -67,5 +69,13 @@ setopt HIST_VERIFY               # Don't execute immediately upon history expans
 setopt HIST_BEEP                 # Beep when accessing nonexistent history.
 
 
-alias ll="ls -al"
+alias ls='ls --color'
+alias grep='grep --color'
+
+alias ll='ls -alF'
 alias pythondev=~/.conda/envs/dev1/bin/python
+
+
+bindkey '^[[1;5C' forward-word        # ctrl right
+bindkey '^[[1;5D' backward-word       # ctrl left
+bindkey '^H' backward-kill-word       # ctrl backspace
